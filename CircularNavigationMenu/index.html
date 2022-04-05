@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Circular Navigation Menu Indicator</title>
+</head>
+    <body>
+        <ul class="menu">
+            <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+            <li style="--1:0;"><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
+            <li style="--1:1;"><a href="#"><ion-icon name="person-outline"></ion-icon></a></li>
+            <li style="--1:2;"><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
+            <li style="--1:3;"><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+            <li style="--1:4;"><a href="#"><ion-icon name="videocam-outline"></ion-icon></a></li>
+            <li style="--1:5;"><a href="#"><ion-icon name="key-outline"></ion-icon></a></li>
+            <li style="--1:6;"><a href="#"><ion-icon name="game-controller-outline"></ion-icon></a></li>
+            <li style="--1:7;"><a href="#"><ion-icon name="camera-outline"></ion-icon></a></li>
+        </ul>
+
+        <script>
+            let menuToggle = document.querySelector('.toggle');
+            let menu = document.querySelector('.menu');
+            menuToggle.onclick = function(){
+                menu.classList.toggle('active')
+                menuToggle.classList.toggle('active')
+            }
+        </script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

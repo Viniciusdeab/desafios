@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cartões de Preço</title>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <h1>Seus Preços</h1>
+            <div class="toggle">
+                <label>Anual</label>
+                <div class="toggle-btn">
+                    <input type="checkbox" class=checkbox id="checkbox"/>
+                    <label for="checkbox" id="sub" class="sub">
+                        <div class="circle"></div>
+                    </label>
+                </div>
+
+                <label>Mensal</label>
+            </div>
+        </header>
+
+        <div class="cards">
+            <div class="card shadow">
+                <ul>
+                    <li class="pack">Básico</li>
+                    <li class="price bottom-bar" id="basic">R$ 199.99</li>
+                    <li class="bottom-bar">500GB de Armazenamento</li>
+                    <li class="bottom-bar">2 Usuários</li>
+                    <li class="bottom-bar">3GB para Envio</li>
+                    <li><button class="btn">Leia Mais</button></li>
+                </ul>
+            </div>
+
+            <div class="card active">
+                <ul>
+                    <li class="pack">Profissional</li>
+                    <li class="price bottom-bar" id="profissional">R$ 249.99</li>
+                    <li class="bottom-bar">1TB de Armazenamento</li>
+                    <li class="bottom-bar">5 Usuários</li>
+                    <li class="bottom-bar">10GB para Envio</li>
+                    <li><button class="btn active-btn">Leia Mais</button></li>
+                </ul>
+            </div>
+
+            <div class="card shadow">
+                <ul>
+                    <li class="pack">Mestre</li>
+                    <li class="price bottom-bar" id="basic">R$ 399.99</li>
+                    <li class="bottom-bar">2TB de Armazenamento</li>
+                    <li class="bottom-bar">10 Usuários</li>
+                    <li class="bottom-bar">20GB para Envio</li>
+                    <li><button class="btn">Leia Mais</button></li>
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

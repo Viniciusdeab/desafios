@@ -131,6 +131,7 @@ ul li.price {
     outline: none;
     border: 0;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .active-btn {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,45 @@
     <link rel="stylesheet" href="style.css">
     <title>Login | Cadastro</title>
 </head>
+
 <body>
-    
+    <div class="container right-painel-active">
+        <!-- cadastro -->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form__title">Cadastro</h2>
+                <input type="text" placeholder="Usuario" class="input">
+                <input type="email" placeholder="Email" class="input">
+                <input type="password" placeholder="Senha" class="input">
+                <button class="btn">Cadastro</button>
+            </form>
+        </div>
+        <!-- Entrar -->
+        <div class="container__form container--singin">
+            <form action="#" id="form2" class="form">
+                <h2 class="form__title">Entrar</h2>
+                <input type="email" placeholder="Email" class="input">
+                <input type="password" placeholder="Senha" class="input">
+                <a href="#" class="link">Esqueceu sua senha?</a>
+                <button class="btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- overlay -->
+    <div class="container__overlay">
+        <div class="overlay">
+            <div class="overlay__painel overlay--left">
+                <button class="btn" id="singin">Entrar</button>
+            </div>
+
+            <div class="overlay__painel overlay--right">
+                <button class="btn" id="singup">Cadastro</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

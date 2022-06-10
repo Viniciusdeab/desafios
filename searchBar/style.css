@@ -73,6 +73,10 @@ body{
     padding: 0 0.25em;
 }
 
+#search.loading button{
+    display: none;
+}
+
 #search.loading .spinner{
     display: block;
 }

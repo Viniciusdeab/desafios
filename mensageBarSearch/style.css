@@ -11,3 +11,63 @@ body{
     align-items: center;
     overflow-y: none;
 }
+
+button{
+    display: flex;
+    height: 30px;
+    width: 40px;
+    align-items: center;
+}
+
+button ion-icon{   
+    height: 25px;
+    width: 40px;
+    transition: transform 0.25s;
+}
+
+button ion-icon:hover{
+    transform: scale(1.2);
+}
+
+button:focus{
+    outline: none;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+}
+
+input::placeholder {
+    font-family: 'Lato', sans-serif;
+}
+
+input:focus{
+    outline: none;
+}
+
+.searchBox{
+    height: 60px;
+    width: 450px;
+    max-height: 100%;
+    background: #FFF;
+    border-radius: 10px;
+    position:relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.searchBox .btn-menu{
+    background: transparent;
+    border: none;
+    cursor: pointer;    
+}
+
+.searchBox .search{
+    border: none;
+    width: 100%;
+}

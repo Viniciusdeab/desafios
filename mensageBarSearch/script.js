@@ -11,6 +11,10 @@ $("#close").click(function () {
     $("#Modal").hide();
 });
 
-$(".btn-menu").click(function () {
+$(".notificacao").click(function () {
     $("#Modal").show();
+});
+
+$("#fechar").click(function () {
+    $("#Modal").hide();
 });

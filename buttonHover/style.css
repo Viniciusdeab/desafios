@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+
+body {
+    background-color: #212121;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #c47135;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 1em;
+    margin: 16px 40px;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-width: 0;
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.btn::before {
+    border-color: #c47135;
+    border-top-width: 2px;
+    left: 0;
+    top: -5px;
+}
+
+.btn::after {
+    border-color: #c47135;
+    border-bottom-width: 2px;
+    right: 0;
+    bottom: -5px;
+}
+
+.btn:hover{
+    background-color: #ff6a00;
+}
+
+.btn:hover::before,
+.btn:hover::after{
+    border-color: #ff6a00;
+    width: 100%;
+}

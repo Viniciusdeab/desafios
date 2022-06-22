@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #212121;
+    transition: 0.5s
+}
+
+.navegation {
+    position: relative;
+    width: 70px;
+    height: 350px;
+    background: #FFF;
+    border-radius: 35px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.navegation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navegation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navegation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+}
+
+.navegation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.navegation ul li.active a .icon {
+    color: #fff;
+}
+
+.navegation ul li a .icon i {
+    font-size: 24px;
+}
+
+.navegation ul li a .title{
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    background-color: #fff;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navegation ul li:hover a .title{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-25px) translateY(-50%);
+}
+
+.navegation ul li a .title::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    left: -7px;
+    top: 46%;
+    transform: rotate(45deg) translateY(-50%);
+    border-radius: 2px;
+}
+
+.navegation ul .indicador{
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+
+.navegation ul .indicador::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.navegation ul li:nth-child(1).active ~ .indicador{
+    transform: translateY(calc(70px * 0));
+}
+
+.navegation ul li:nth-child(2).active ~ .indicador{
+    transform: translateY(calc(70px * 1));
+}
+
+.navegation ul li:nth-child(3).active ~ .indicador{
+    transform: translateY(calc(70px * 2));
+}
+
+.navegation ul li:nth-child(4).active ~ .indicador{
+    transform: translateY(calc(70px * 3));
+}
+
+.navegation ul li:nth-child(5).active ~ .indicador{
+    transform: translateY(calc(70px * 4));
+}
+
+.navegation ul li:nth-child(1).active ~ .indicador::before{
+    background: #f53b57;
+}
+.navegation ul li:nth-child(2).active ~ .indicador::before{
+    background: #3c40c6;
+}
+.navegation ul li:nth-child(3).active ~ .indicador::before{
+    background: #05c46b;
+}
+.navegation ul li:nth-child(4).active ~ .indicador::before{
+    background: #0fbcf9;
+}
+.navegation ul li:nth-child(5).active ~ .indicador::before{
+    background: #ffa801;
+}

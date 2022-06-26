@@ -64,3 +64,24 @@ body{
     font: 1rem;
     transform: translateX(-20px);
 }
+
+.dots{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.dots::before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr),
+    0 0 60px var(--clr);
+}

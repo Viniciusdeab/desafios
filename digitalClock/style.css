@@ -46,7 +46,7 @@ body{
 }
 
 #time .circle svg circle:nth-child(2){
-    stroke: red;
+    stroke: var(--clr);
 }
 
 #time div{

@@ -2,4 +2,4 @@
 
 Repositório para registrar os desafios e praticas.
 
-[Acesse a pagina com todos os desafios]()
+[Acesse a pagina com todos os desafios](https://viniciusdeab.github.io/desafios/).

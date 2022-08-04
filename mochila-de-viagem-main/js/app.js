@@ -1,6 +1,10 @@
 const form = document.getElementById("novoItem");
 const lista = document.getElementById("lista");
-const itens = [];
+const itens = JSON.parse(localStorage.getItem("itens")) || [];
+
+itens.forEach((element) =>{
+    console.log(element.nome, element.quantidade);
+})
 
 form.addEventListener("submit", (evento)=> {
     evento.preventDefault()
